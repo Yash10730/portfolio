@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Singh Finserve — Protect Today. Plan for Tomorrow.</title>
+<meta name="description" content="Singh Finserve helps you navigate motor, health, travel and business insurance enquiries.">
+<style>
+:root{--bg:#08090B;--bg2:#101114;--fg:#F7F7F5;--mut:#A8ABB2;--red:#B51F2B;--line:#2a2c32;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,7vw,5.2rem)}h2{font-size:clamp(1.8rem,4vw,3rem)}
+a{color:inherit}.mut{color:var(--mut)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 5vw;background:rgba(8,9,11,.92);border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:.04em}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}nav a{text-decoration:none;font-size:.92rem;color:var(--mut)}nav a:hover{color:var(--fg)}
+.btn{display:inline-block;border:1px solid var(--fg);padding:.75em 1.4em;text-decoration:none;font-size:.95rem;background:none;color:var(--fg);cursor:pointer;transition:.2s}
+.btn.p{background:var(--red);border-color:var(--red)}.btn:hover{transform:translateY(-2px)}
+section{padding:90px 5vw;max-width:1200px;margin:auto}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;max-width:none;overflow:hidden}
+.hero .in{position:relative;z-index:2;max-width:760px}
+#cv{position:absolute;right:-5vw;top:0;width:60%;height:100%;opacity:.85}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{background:var(--bg2);padding:28px}.card h3{font-size:1.4rem}
+.light{background:var(--fg);color:#101114;max-width:none}.light .mut{color:#555}
+.steps{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.steps span{border:1px solid #bbb;padding:.5em 1em}
+form,.panel{background:var(--bg2);border:1px solid var(--line);padding:28px;max-width:620px}
+label{display:block;margin:14px 0 4px;font-size:.9rem}
+input,select,textarea{width:100%;padding:.7em;background:var(--bg);border:1px solid #444;color:var(--fg);font:inherit}
+.err{color:#ff8a93;font-size:.82rem;min-height:1em}
+.tag{display:inline-block;background:var(--red);padding:.2em .7em;font-size:.75rem;letter-spacing:.06em}
+table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;padding:.6em;border-bottom:1px solid var(--line)}
+.tw{overflow-x:auto}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:18px 0}
+.kpi div{background:var(--bg2);border:1px solid var(--line);padding:16px}.kpi b{font-size:1.7rem;display:block}.kpi small{color:var(--mut)}
+.bar{height:22px;background:var(--red);margin:4px 0}
+footer{border-top:1px solid var(--line);padding:40px 5vw;color:var(--mut);font-size:.9rem}
+.view{display:none}.view.on{display:block}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:700px){#cv{width:100%;opacity:.35}section{padding:60px 5vw}}
+</style></head><body>
+<header><a class="logo" href="#home" aria-label="Singh Finserve home"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#101114" stroke="#A8ABB2"/><path d="M22 9h-8a4 4 0 0 0 0 8h6a4 4 0 0 1 0 8H11" fill="none" stroke="#F7F7F5" stroke-width="2.4"/><path d="M14 9v16" stroke="#B51F2B" stroke-width="2.4"/></svg>Singh Finserve</a>
+<nav aria-label="Main"><a href="#insurance">Insurance</a><a href="#producer-journey">How it works</a><a href="#contact">Contact</a><a href="#producer">Producer Login</a><a class="btn p" href="#quote">Request a Quote</a></nav></header>
+
+<main id="v-home" class="view on">
+<section class="hero"><canvas id="cv" aria-hidden="true"></canvas><div class="in">
+<p class="mut">Singh Finserve · Insurance &amp; Financial Services</p>
+<h1>Beyond Protection. Into Possibility.</h1>
+<p class="mut" style="font-size:1.2rem">Insurance guidance that connects your needs with the right next steps.</p>
+<p><a class="btn p" href="#insurance">Explore Insurance</a> <a class="btn" href="#quote">Request a Quote</a> <a class="btn" href="tel:9242338825">Contact Singh Finserve</a></p></div></section>
+
+<section id="insurance"><h2>Different lives. Different protection needs.</h2>
+<div class="grid" id="cats"></div></section>
+
+<section class="light" style="padding:90px 5vw"><div style="max-width:1200px;margin:auto" id="producer-journey">
+<h2>The producer connection</h2><p class="mut">Personalised assistance, step by step. Not every enquiry results in a quotation or policy.</p>
+<div class="steps"><span>Customer Need</span>→<span>Enquiry</span>→<span>Producer Assistance</span>→<span>Authorised Quotation</span>→<span>Customer Decision</span></div></div></section>
+
+<section><h2>Business protection</h2><p class="mut" style="max-width:640px">Property &amp; fire, marine, engineering, liability and employee-related covers. Some products need additional information or underwriting, so a producer-assisted quotation is offered rather than an instant online quote.</p></section>
+
+<section id="contact" style="text-align:left"><h1 style="font-size:clamp(2rem,5vw,3.6rem)">Your Next Step Starts Here.</h1>
+<p class="mut">Tell us what you need. Singh Finserve will help you navigate the next step in your insurance journey.</p>
+<p><a class="btn p" href="#quote">Request a Callback</a> <a class="btn" href="#insurance">Explore Insurance</a></p>
+<p>Phone: <a href="tel:9242338825">9242338825</a><br>Email: <a href="mailto:anshrajput1214@gmail.com">anshrajput1214@gmail.com</a></p></section>
+</main>
+
+<main id="v-quote" class="view"><section><h2>Request a quote or callback</h2>
+<p class="mut">This submits an enquiry only. It is not a quotation and does not create or confirm any insurance cover.</p>
+<form id="qf" novalidate><span class="tag">DEMO MODE · saved in this browser only</span>
+<label for="cat">Insurance category</label><select id="cat" name="cat"></select><div class="err" data-e="cat"></div>
+<label for="nm">Name</label><input id="nm" name="nm" autocomplete="name"><div class="err" data-e="nm"></div>
+<label for="ph">Phone (10 digits)</label><input id="ph" name="ph" inputmode="numeric" autocomplete="tel"><div class="err" data-e="ph"></div>
+<label for="em">Email (optional)</label><input id="em" name="em" type="email" autocomplete="email"><div class="err" data-e="em"></div>
+<label for="dt">Basic details (no medical or ID numbers)</label><textarea id="dt" name="dt" rows="3" maxlength="400"></textarea>
+<label><input type="checkbox" id="cs" style="width:auto"> I agree to be contacted about this enquiry and have read the privacy notice.</label><div class="err" data-e="cs"></div>
+<button class="btn p" id="sb" type="submit">Submit enquiry</button><p id="msg" role="status"></p></form></section></main>
+
+<main id="v-producer" class="view"><section style="max-width:1200px">
+<span class="tag">DEMO DATA · fictional seed records + enquiries submitted in this browser</span>
+<h2 style="margin-top:12px">Producer dashboard</h2>
+<p class="mut">Demo view with no real authentication. A production build needs server-side login and per-producer data isolation.</p>
+<div class="kpi" id="kpi"></div>
+<h3>Lead funnel</h3><div id="fun"></div>
+<h3 style="margin-top:30px">Leads</h3><div class="tw"><table><thead><tr><th>Ref</th><th>Name</th><th>Category</th><th>Source</th><th>Stage</th><th>Update stage</th></tr></thead><tbody id="lt"></tbody></table></div>
+<h3 style="margin-top:30px">Nine parameters: how each is measured</h3><div class="tw"><table id="pp"></table></div>
+<p class="mut" style="font-size:.85rem">Illustrative synthetic data only. It shows the operating model and does not represent verified Tata AIG operational results. Premium, revenue, commission and profit are distinct and none is shown here.</p>
+</section></main>
+
+<footer><b style="color:var(--fg)">Singh Finserve</b> · Insurance &amp; Financial Services · <a href="tel:9242338825">9242338825</a> · <a href="mailto:anshrajput1214@gmail.com">anshrajput1214@gmail.com</a>
+<p>Project context: Tata AIG Next Gen, IIM Udaipur. Singh Finserve is not presented as an official Tata AIG website. Submitting an enquiry does not create an insurance contract or confirm coverage. Coverage depends on product terms; no premiums are shown. © <span id="yr"></span> Singh Finserve.</p></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const CFG={phone:"9242338825",email:"anshrajput1214@gmail.com",officialQuoteUrls:{}};
+const CATS=[["Motor","Cars, two-wheelers and applicable commercial vehicles."],["Health","For individuals and families. Cover depends on policy terms."],["Travel","Eligibility and cover depend on the applicable product terms."],["Business","Property, marine, engineering, liability, employee-related."]];
+document.getElementById("yr").textContent=new Date().getFullYear();
+document.getElementById("cats").innerHTML=CATS.map(c=>`<div class="card"><h3>${c[0]}</h3><p class="mut">${c[1]}</p><a class="btn" href="#quote?${c[0]}">Request a quote</a></div>`).join("");
+document.getElementById("cat").innerHTML=CATS.map(c=>`<option>${c[0]}</option>`).join("");
+const STAGES=["New","Contacted","Qualified","Quote requested","Quotation received","Converted","Lost"];
+const SEED=[["Demo Lead A","Motor","Campaign: QR flyer","Qualified"],["Demo Lead B","Health","Organic","Contacted"],["Demo Lead C","Travel","Campaign: social","Quote requested"],["Demo Lead D","Business","Direct","Quotation received"],["Demo Lead E","Motor","Organic","Converted"],["Demo Lead F","Health","Campaign: QR flyer","New"],["Demo Lead G","Motor","Campaign: social","Lost"]].map((r,i)=>({ref:"DEMO-"+(100+i),name:r[0],cat:r[1],src:r[2],stage:r[3],demo:true}));
+let mine=[];try{mine=JSON.parse(localStorage.getItem("sf_leads")||"[]")}catch(e){}
+function save(){try{localStorage.setItem("sf_leads",JSON.stringify(mine))}catch(e){}}
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function rate(n,d){return d>0?(n/d*100).toFixed(1)+"%":"n/a"}
+function render(){
+ const all=[...mine,...SEED],cnt=s=>all.filter(l=>STAGES.indexOf(l.stage)>=STAGES.indexOf(s)&&l.stage!=="Lost").length;
+ const q=cnt("Qualified"),qr=cnt("Quote requested"),qd=cnt("Quotation received"),cv=all.filter(l=>l.stage==="Converted").length;
+ const k=[["Enquiries",all.length,"All records in this demo"],["Qualified leads",q,"Qualified or later"],["Quotations received",qd,"Recorded by producer"],["Policies (verified)",cv,"Only when verified"],["Lead-to-quote rate",rate(qd,all.length),"Quotations ÷ all leads"],["Quote-to-policy rate",rate(cv,qd),"Policies ÷ quotations"]];
+ kpi.innerHTML=k.map(x=>`<div><small>${x[0]}</small><b>${x[1]}</b><small>${x[2]}</small></div>`).join("");
+ fun.innerHTML=[["Enquiry",all.length],["Qualified",q],["Quote requested",qr],["Quotation received",qd],["Policy",cv]].map(f=>`<div>${f[0]}: ${f[1]}<div class="bar" style="width:${all.length?f[1]/all.length*100:0}%"></div></div>`).join("");
+ lt.innerHTML=all.map(l=>`<tr><td>${esc(l.ref)}</td><td>${esc(l.name)}</td><td>${esc(l.cat)}</td><td>${esc(l.src)}</td><td>${esc(l.stage)}</td><td><select data-r="${esc(l.ref)}" aria-label="Stage for ${esc(l.ref)}">${STAGES.map(s=>`<option${s===l.stage?" selected":""}>${s}</option>`).join("")}</select></td></tr>`).join("");
+ lt.querySelectorAll("select").forEach(s=>s.onchange=()=>{const l=all.find(x=>x.ref===s.dataset.r);l.stage=s.value;save();render()});
+ pp.innerHTML="<tr><th>#</th><th>Parameter</th><th>Feature / metric</th></tr>"+["Digital visibility &amp; reach|Visits, sources, campaign attribution (needs analytics backend)","Engagement &amp; CTA clicks|Quote starts vs completed enquiries","Qualified leads &amp; generation rate|Qualified ÷ leads assessed (above)","Lead conversion &amp; business|Funnel: enquiry → qualified → quotation → policy","Cross-sell &amp; upsell|Rule-based, producer-reviewed opportunities (planned)","Producer proposition|Profile completeness, response time","Analytics &amp; ROI|Only computed when cost and verified outcomes exist","Scalability &amp; growth|Config-driven brand and products; multi-producer ready","Execution, compliance &amp; governance|Consent captured, audit trail, role-based access (planned)"].map((r,i)=>{const p=r.split("|");return`<tr><td>${i+1}</td><td>${p[0]}</td><td>${p[1]}</td></tr>`}).join("");
+}
+const $=id=>document.getElementById(id),kpi=$("kpi"),fun=$("fun"),lt=$("lt"),pp=$("pp");
+function route(){const h=location.hash.slice(1).split("?"),v=["quote","producer"].includes(h[0])?h[0]:"home";
+ document.querySelectorAll(".view").forEach(e=>e.classList.toggle("on",e.id==="v-"+v));
+ if(v==="quote"&&h[1]&&CATS.some(c=>c[0]===h[1]))$("cat").value=h[1];
+ if(v==="producer")render();
+ if(["home","quote","producer"].includes(h[0])||!h[0])window.scrollTo(0,0);
+ else setTimeout(()=>{const t=document.getElementById(h[0]);t&&t.scrollIntoView()},30)}
+addEventListener("hashchange",route);route();
+$("qf").onsubmit=e=>{e.preventDefault();const E={};document.querySelectorAll(".err").forEach(x=>x.textContent="");
+ const nm=$("nm").value.trim(),ph=$("ph").value.replace(/\s/g,""),em=$("em").value.trim();
+ if(nm.length<2)E.nm="Please enter your name.";
+ if(!/^[6-9]\d{9}$/.test(ph))E.ph="Enter a valid 10-digit Indian mobile number.";
+ if(em&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em))E.em="Enter a valid email address.";
+ if(!$("cs").checked)E.cs="Consent is needed so we can contact you.";
+ for(const k in E)document.querySelector(`[data-e="${k}"]`).textContent=E[k];
+ if(Object.keys(E).length)return;
+ $("sb").disabled=true;
+ const ref="SF-"+Date.now().toString(36).toUpperCase();
+ mine.unshift({ref,name:nm,cat:$("cat").value,src:"Microsite (demo)",stage:"New"});save();
+ $("msg").textContent="Enquiry received. Reference "+ref+" (demo mode, stored in this browser only). This is not a quotation. A producer will follow up using the contact details you gave.";
+ $("qf").reset();setTimeout(()=>$("sb").disabled=false,1500)};
+// 3D scene with static fallback
+(function(){const cv=$("cv");try{
+ if(matchMedia("(prefers-reduced-motion:reduce)").matches||!window.THREE)throw 0;
+ const r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true}),s=new THREE.Scene(),c=new THREE.PerspectiveCamera(45,1,.1,100);c.position.z=6;
+ const g=new THREE.Mesh(new THREE.IcosahedronGeometry(1.6,1),new THREE.MeshStandardMaterial({color:0x2a2c32,metalness:.9,roughness:.25,flatShading:true}));
+ const w=new THREE.Mesh(new THREE.IcosahedronGeometry(2.1,1),new THREE.MeshBasicMaterial({color:0xB51F2B,wireframe:true,transparent:true,opacity:.45}));
+ s.add(g,w,new THREE.AmbientLight(0xffffff,.5));const l=new THREE.PointLight(0xffffff,1.2);l.position.set(4,3,5);s.add(l);
+ function rs(){const W=cv.clientWidth,H=cv.clientHeight;r.setSize(W,H,false);c.aspect=W/H;c.updateProjectionMatrix()}rs();addEventListener("resize",rs);
+ (function a(){const y=scrollY/innerHeight;g.rotation.y+=.004;g.rotation.x=y*.6;w.rotation.y-=.003;w.rotation.z=y*.5;g.position.y=-y*.8;r.render(s,c);requestAnimationFrame(a)})();
+}catch(e){cv.style.background="radial-gradient(circle at 60% 50%,#2a2c32,transparent 60%)"}})();
+</script></body></html>
